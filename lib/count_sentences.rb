@@ -17,8 +17,10 @@ class String
   end
 
   def count_sentences
-    split_self = self.split(/[.|?|!]\s+/) #the \s+ gets rid of the white spaces when splitting
+    split_self = self.split(/[.|?|!]\s/) #the \s+ gets rid of the white spaces when splitting
+    #binding.pry
     count = split_self.length
+
     if count
       return count
     else
